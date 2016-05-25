@@ -1,5 +1,5 @@
 ---
-title: Introducing Utterson
+title: Welcome to my Blog
 ---
 
 Utterson was built on top of [Jekyll](http://jekyllrb.com), a static site generator, and  [Poole](https://github.com/poole/poole), a vanilla Jekyll install. It was designed and developed by [@alidcastano](https://twitter.com/alidcastano), to provide a minimal and unassuming theme, focused on what matters: you and your content.
