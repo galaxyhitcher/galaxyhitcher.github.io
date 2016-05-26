@@ -1,3 +1,2 @@
-# Check Out My First Post
-
-Several months ago, I enrolled in Launch Academy which is an online bootcamp for learning web development. This blog will be a partial catalog of topics I will encounter as I learn web development. I have learned Ruby and Sinatra so I decided to use Jekyll since it's a lightweight and Ruby-based blogging software. After installing the Jekyll gem, I created the blog you are reading using the very nice Utterson theme (from http://jekyllthemes.org/themes/utterson/).
+<p>Several months ago, I enrolled in Launch Academy which is an online bootcamp for learning web development.  This blog will be a partial catalog of topics I learn.</p>
+<p>I chose to use Jekyll for this project since it is Ruby software (which I have been learning)!  After installing the Jekyll gem, I created the blog you are reading using the very nice Utterson theme from <i><a>http://jekyllthemes.org/themes/utterson/.</a></i></p>

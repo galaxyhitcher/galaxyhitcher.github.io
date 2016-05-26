@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    
+      Building Websites &middot; My Experiments with Front-end and Back-end Development
+    
+  </title>
+
+  <link rel="stylesheet" href="/styles.css">
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+</head>
+
+
+  <body>
+
+    <div class="container content"> 
+      
+
+
+      <main>
+        <div class="home">
+
+  <div class="mini-intro">
+    <img class="avatar" src="img/profile-pic.jpg" alt="your-photo">
+    
+    
+<h1 id="learning-full-stack-development"><a href="/">Learning Full-stack Development</a></h1>
+
+<p>A small catalog of interesting web-development topics.</p>
+
+
+  </div>
+
+  <ul class="accordion-tabs">
+    <li class="tab-header-and-content">
+      <a href="#" id="trigger-form" class="tab-aside-link is-active">Newsletter</a>
+      <div class="tab-aside-content">
+      <!-- no tab content, filler div for initial borders --> 
+      </div>
+    </li>
+
+    <li class="tab-header-and-content">
+      <a href="#" class="tab-link">Blog</a>
+      <div class="tab-content featured-posts">
+          <h2> Newest Articles </h2>
+          
+          <article class="post">
+            <h3 class="post-title">
+              <a href="/check-out-my-first-post">
+                Check Out My First Post
+              </a>
+            </h3>
+          </article>
+          
+          <a href="/archives" class="see-archives">See all articles</a>
+      </div>
+    </li>
+
+    <li class="tab-header-and-content">
+      <a href="#" class="tab-link">Projects</a>
+      <div class="tab-content featured-projects"> 
+        
+        
+<h1 id="heres-what-ive-been-working-on">Here’s what I’ve been working on</h1>
+
+<ul>
+  <li>
+    <h3 id="investigating-the-connection-between-jekyll-and-hyde">Investigating the connection between Jekyll and Hyde</h3>
+    <ul>
+      <li>I’m on a quest to investigate the identity of Hyde, as I fear that he is blackmailing Jekyll.</li>
+    </ul>
+  </li>
+  <li>
+    <h3 id="another-sample-projecthttputtersonalidcastanocom"><a href="http://utterson.alidcastano.com/">(Another Sample Project)</a></h3>
+    <ul>
+      <li>Just working on changing the world, no big deal.</li>
+    </ul>
+  </li>
+</ul>
+
+
+      </div>
+    </li>
+
+    <li class="tab-header-and-content">
+      <a href="#" class="tab-link">About</a>
+      <div class="tab-content">
+        
+        <h1 id="about-louis">About Louis</h1>
+
+<p>My name is Louis Heimel and I am learning the craft of full-stack development.</p>
+
+
+      </div>
+    </li>
+
+
+    <li class="tab-header-and-content">
+      <a href="#" class="tab-link">Contact</a>
+      <div class="tab-content">
+        <!-- formspree contact form --> 
+<h2> Let's Chat. </h2>
+<form class="contact-form" id="contact-form" method="POST">
+    <input type="text" name="name" 
+    placeholder="My name is" required> 
+
+    <input type="email" name="_replyto" 
+    placeholder="and my email is" required>
+
+    <!-- so that you know where email came from --> 
+    <input type="hidden" name="_subject" value="blog contact" /> 
+
+    <textarea name="message" placeholder="Here's what's on my mind,"
+     class="expanding" required></textarea>
+
+     <!-- return to page after sending form -->
+    <input type="hidden" name="_next" value="/" />
+    <!-- honeypot field, to avoid spam --> 
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <input class="send-button" type="submit" value="Send"> 
+</form>
+
+<!-- wrap email attribute in JS for extra security -->
+<script>
+    var contactform =  document.getElementById('contact-form');
+    contactform.setAttribute('action', '//formspree.io/' + '');
+</script>
+
+
+      </div>
+    </li>
+  </ul>
+
+</div>
+
+
+
+
+
+
+
+      </main>
+    
+      
+
+    </div>
+
+    <form id="subscription-form" class="subscription-form" method="POST">
+  <h2> Join My Newsletter  </h2>
+  <p> Sign up to receive weekly updates. </p>
+  <a class="close-form" id="close-form">x</a>
+    
+    <input type="text" name="name" id="your-name" minlength="3" 
+    placeholder="Name" required> 
+
+    <input type="email" name="subscriber" id="email" 
+    placeholder="Email" required>
+
+    <!-- return to site after submission --> 
+     <input type="hidden" name="_next" value="/" />
+
+    <textarea name="YES!" value="Note to self: Add to list" style="display:none"></textarea>
+
+     <input class="send-button" type="submit" value="Sign Up"> 
+    </form>
+</form>
+
+<!-- wrap email attribute in JS for extra security -->
+<script>
+    var contactform =  document.getElementById('subscription-form');
+    contactform.setAttribute('action', '//formspree.io/' + '');
+</script>
+
+
+    <script src="/js/jquery.min.js"></script>
+<script src="/js/site-form-triggers.js"></script>
+
+
+<script src="/js/home-accordion-tabs.js"></script>
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ ga('create', 'UA-53335201-2', 'auto');
+ ga('send', 'pageview');
+</script>
+
+
+
+  </body>
+
+</html>
